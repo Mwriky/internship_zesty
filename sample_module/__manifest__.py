@@ -20,22 +20,28 @@
 ##############################################################################
 
 {
-    'name': 'Training Module March 2025',
+    'name': 'sample_module',
     'version': '18.0.0.0',
-    'summary': 'This Module is for training purposes.',
-    'description': """This Module is for training purposes.
+    'summary': 'madre mia',
+    'description': """ This Module  is for training purposes.
     """,
-    'category': '',
-    'author': 'Madhan', 
+    'category':'Training',
+    'author': 'Nagabhushan',
     'website': 'www.zbeanztech.com',
     "license": "LGPL-3",
-    'depends': [],
+    'depends': ['base','sale','sale_management','account','contacts','product'],
     'data': [
-        'security/ir.model.access.csv', 
-        'security/security.xml',
-        'views/model_one_view.xml',
-        'views/menu.xml'
-    ],
+				'security/ir.model.access.csv',
+                'security/security.xml',
+                'data/sequence.xml',
+                'wizard/sample_wizard_view.xml',
+                'views/car_rental_view.xml',
+                'views/food_view.xml',
+                'views/model_one_view.xml',
+                'views/model_one_lines.xml',
+                'views/menu.xml',
+				
+        ],
     'test': [],
     'demo': [],
     'installable': True,
